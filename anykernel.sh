@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=QuartiX GKI DUMMY1 (DATE) KSUDUMMY2
+kernel.string=
 do.devicecheck=0
 do.modules=0
 do.systemless=0
