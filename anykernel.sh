@@ -32,11 +32,11 @@ PATCH_VBMETA_FLAG=auto;
 
 kernel_version=$(cat /proc/version | awk -F '-' '{print $1}' | awk '{print $3}')
 case "$kernel_version" in
-    5.10.*) supp=true ;;
+    6.6.*) supp=true ;;
     *) supp=false ;;
 esac
 
-ui_print " " "-> 5.10 Kernel: $supp"
+ui_print " " "-> 6.6 Kernel: $supp"
 $supp || exit 1
 
 # boot install
